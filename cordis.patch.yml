@@ -1,0 +1,8 @@
+# keylessmodels2dsh bundle patch for DeepSeek Harness & DSH Desktop (v0.12.1+).
+#
+# Mounts the Host half (`index.js`); the Browser half (`client.js`) is discovered
+# automatically via `package.json#dsh.client` on this bare-package-name row.
+- insert:
+    - id: keylessmodels2dsh
+      name: 'keylessmodels2dsh'
+      config: {}

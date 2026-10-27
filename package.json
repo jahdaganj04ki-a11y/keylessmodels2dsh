@@ -1,0 +1,73 @@
+{
+  "name": "keylessmodels2dsh",
+  "version": "1.0.0",
+  "description": "Zero-key multi-provider LLM plugin for DSH Desktop (v0.12.1+, Windows/macOS/Linux): unifies Kilo Gateway, OVHcloud, Vireonix, ch.at, LLM7, Rewind AI, Free.ai, VLM Run, BlockRun, Pollinations, ChatJimmy, Stillworks live registry, and local zero-key models with smart auto-routing and cross-provider failover.",
+  "type": "module",
+  "license": "MIT",
+  "author": "keylessmodels2dsh Contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahdaganj04ki-a11y/keylessmodels2dsh.git"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-desktop",
+    "deepseek-harness",
+    "dsh-plugin",
+    "deepseek-harness-plugin",
+    "keyless",
+    "free-llm",
+    "kilo-gateway",
+    "ovhcloud",
+    "vireonix",
+    "llm7",
+    "pollinations",
+    "blockrun",
+    "windows"
+  ],
+  "main": "./index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "adapter/*.js",
+    "src/*.js",
+    "scripts/*.ps1",
+    "scripts/*.mjs",
+    "docs/*.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "verify": "node scripts/verify-plugin.mjs",
+    "check": "node scripts/verify-plugin.mjs && node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "dsh": ">=0.2.0-rc.1 <1.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

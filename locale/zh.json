@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "免密钥免费模型聚合 (Keyless Free Models)",
+    "description": "聚合全部已验证免 API Key 免费大模型渠道（Kilo Gateway、OVHcloud、Vireonix、ch.at、LLM7、Rewind AI、Free.ai、VLM Run、BlockRun、Pollinations、ChatJimmy、Stillworks 实时源及本地零配置模型），支持智能路由与跨渠道故障转移。"
+  }
+}

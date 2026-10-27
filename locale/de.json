@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Keyless Free Models (Ohne API-Key)",
+    "description": "Alle verifizierten kostenlosen LLM-Provider ohne API-Key oder Login (Kilo Gateway, OVHcloud, Vireonix, ch.at, LLM7, Rewind AI, Free.ai, VLM Run, BlockRun, Pollinations, ChatJimmy, Stillworks Live-Feed & lokale Modelle) mit intelligentem Auto-Routing und Failover."
+  }
+}
